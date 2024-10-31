@@ -1,0 +1,105 @@
+.table__container {
+  width: 100%;
+
+  & .table {
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    th,
+    td {
+      padding: 12px 20px;
+      text-align: left;
+      font-size: 14px;
+      color: #696f8c;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: -0.14px;
+    }
+
+    thead {
+      background: #f6f6f6;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #e0e0e0;
+      overflow: auto;
+    }
+
+    & .actions__button {
+      display: flex;
+      gap: 6px;
+
+      & .button {
+        display: flex;
+        width: 56px;
+        padding: 8px 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+      }
+
+      & .accept {
+        border-radius: 6px;
+        background: #b4d479;
+      }
+
+      & .reject {
+        border-radius: 6px;
+        background: #ea8389;
+      }
+    }
+
+    & .resume {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      & span {
+        border-radius: 2px;
+        background: var(--Grey-L3, #f6f6f6);
+        display: flex;
+        width: 43px;
+        height: 32px;
+        padding: 4px 10px 4px 9px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    & .cell {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      & .image {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        padding: 7px 0px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 32px;
+        background: var(--Violet-V100, #e7e4f9);
+
+        & p {
+          color: #524988;
+          text-align: center;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 1.5;
+        }
+      }
+
+      & span {
+        color: #101840;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 18px */
+      }
+    }
+  }
+}
