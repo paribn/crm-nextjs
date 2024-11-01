@@ -9,54 +9,10 @@ import {
   ResumeIcon,
 } from "@/assets/images/auth/vector";
 import Title from "@/components/shared/Title/Title";
+import { tableData } from "@/constans/fake-data.constant";
 
 const Dashboard = () => {
   const header = ["Name", "Email ID", "Social Media", "Resume", "Actions"];
-
-  const data = [
-    {
-      name: "Rohit",
-      email: "pari@mail.ru",
-      socialMedia: "Linkedin",
-      resume: "Resume.pdf",
-    },
-    {
-      name: "Rohit",
-      email: "pari@mail.ru",
-      socialMedia: "Linkedin",
-      resume: "Resume.pdf",
-    },
-    {
-      name: "Rohit",
-      email: "pari@mail.ru",
-      socialMedia: "Linkedin",
-      resume: "Resume.pdf",
-    },
-    {
-      name: "Rohit",
-      email: "pari@mail.ru",
-      socialMedia: "Linkedin",
-      resume: "Resume.pdf",
-    },
-    {
-      name: "Rohit",
-      email: "pari@mail.ru",
-      socialMedia: "Linkedin",
-      resume: "Resume.pdf",
-    },
-    {
-      name: "Rohit",
-      email: "pari@mail.ru",
-      socialMedia: "Linkedin",
-      resume: "Resume.pdf",
-    },
-    {
-      name: "Rohit",
-      email: "pari@mail.ru",
-      socialMedia: "Linkedin",
-      resume: "Resume.pdf",
-    },
-  ];
 
   return (
     <>
@@ -65,10 +21,11 @@ const Dashboard = () => {
         desc={"Collaborate with influencers"}
         btnSubject={"Add New +"}
       />
+
       <Filters options1={"Status"} options2={"categorys"} />
 
       <Table headers={header}>
-        {data.map((row, index) => (
+        {tableData.map((row, index) => (
           <tr className={styles.row} key={index}>
             <td>
               <input type="checkbox" />

@@ -7,9 +7,10 @@
   width: 100%;
   height: 100%;
 
+  padding: 0 24px;
+
   & .title {
-    color: var(--Black-L2, #363939);
-    font-family: Inter;
+    color: #363939;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -17,8 +18,8 @@
   }
 
   & .form {
-    // max-width: 544px;
-
+    width: 100%;
+    max-width: 545px;
     & .input {
       display: flex;
       flex-direction: column;
@@ -28,7 +29,6 @@
       & input {
         border-radius: 10px;
         border: 0.6px solid #b1b2b2;
-        color: #b1b2b2;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -36,12 +36,21 @@
         letter-spacing: -0.18px;
         display: flex;
         width: 100%;
-        padding: 15px 383px 14px 24px;
+        padding: 15px 24px 14px 24px;
         align-items: center;
+
+        color: #000000;
+
+        &::placeholder {
+          color: #b1b2b2;
+        }
       }
     }
   }
   & .button {
     margin-top: 40px;
   }
+}
+
+@media (max-width: 480px) {
 }

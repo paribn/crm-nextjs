@@ -27,9 +27,11 @@ export default function AuthLayout({ children }) {
 
         <Image src={LoginBackground} alt="Loginn background" />
 
-        <div className={styles.auth__image__dashboard}>
-          <Image src={Dashboard} alt="Dashboard" />
-        </div>
+        <Image
+          className={styles.auth__image__dashboard}
+          src={Dashboard}
+          alt="Dashboard"
+        />
       </div>
     </div>
   );

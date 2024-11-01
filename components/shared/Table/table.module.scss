@@ -1,9 +1,9 @@
 .table__container {
   width: 100%;
+  overflow: auto;
 
   & .table {
     width: 100%;
-    overflow: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
     th,
@@ -16,6 +16,10 @@
       font-weight: 400;
       line-height: 1.5;
       letter-spacing: -0.14px;
+      &:first-child {
+        width: 13px;
+        padding: 12px 0 12px 20px;
+      }
     }
 
     thead {
@@ -59,7 +63,7 @@
 
       & span {
         border-radius: 2px;
-        background: var(--Grey-L3, #f6f6f6);
+        background: #f6f6f6;
         display: flex;
         width: 43px;
         height: 32px;
@@ -81,7 +85,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 32px;
-        background: var(--Violet-V100, #e7e4f9);
+        background: #e7e4f9;
 
         & p {
           color: #524988;
@@ -98,7 +102,7 @@
         font-size: 12px;
         font-style: normal;
         font-weight: 600;
-        line-height: 150%; /* 18px */
+        line-height: 1.5;
       }
     }
   }
